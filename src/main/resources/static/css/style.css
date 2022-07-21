@@ -1,0 +1,582 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+	list-style-type: none;
+}
+
+#slideshow {
+	display: inline-block;
+	text-align: center;
+	display: flex;
+  	justify-content: center;
+}
+
+.index-image-d {
+	position: absolute;
+	display: inline-block;
+}
+
+.index-image-d img {
+	width: 100vw;
+	height: 100vh;
+}
+
+.container {
+	margin: 10px auto;
+	position: relative;
+}
+
+.container img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.main-text {
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Layout(No Edit) */
+@media ( max-width :440px) {
+	.container {
+		width: 95%;
+	}
+}
+
+/* 상단 메뉴바 */
+.nav-container {
+	text-align: center;
+}
+
+.nav-container.fixed {
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #373737;
+	line-height: 2em;
+}
+
+.navbar-logo {
+	text-align: center;
+	margin: 40px;
+	margin-bottom: 60px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 32pt;
+}
+
+.navbar li {
+	margin: 18px 40px 0 40px;
+	display: inline-block;
+	font-size: 10.5pt;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.navbar li a:hover {
+	color: #54a9a9;
+	transition: 0.1s;
+}
+
+.line {
+	margin-top: 20px;
+}
+
+/* 메인 컨테이너 */
+.main-container h5 {
+	margin: 50px 60px;
+	text-align: center;
+	margin-top: 60px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13pt;
+}
+
+.main-container {
+	margin: auto;
+	text-align: center;
+	width: 80%;
+}
+
+/* 사진 효과 */
+.photo-container {
+	text-align: center;
+	display: inline-block;
+}
+
+.photo-container ul li {
+	display: inline-block;
+	margin: 0 10px 20px 10px;
+}
+
+.photo-border {
+	border: 1px solid #e5e5e5;
+	padding: 5px;
+}
+
+.photo-border img {
+	/* HOVER OFF */
+	transition: all 0.6s ease-in-out;
+}
+
+.photo-border img:hover {
+	transform: scale(1.1);
+	transition: all 0.8s ease-in-out;
+}
+
+.img {
+	overflow: hidden
+}
+
+.view-more {
+	text-align: right;
+	margin-bottom: 50px;
+	margin-right: 80px;
+}
+
+.photo-title {
+	font-size: 10.5pt;
+	margin-bottom: 10px;
+	font-family: 'Gothic A1', sans-serif;
+}
+
+.photo-area {
+	font-size: 10pt;
+	color: gray;
+	margin-bottom: 20px;
+}
+
+/* footer */
+.footer-container {
+	margin: 80px 80px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	display: -ms-flexbox;
+}
+
+.footer-left {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: right;
+}
+
+.footer-left h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 28pt;
+}
+
+.footer-right {
+	text-align: left;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 2;
+	margin-left: 120px;
+}
+
+.footer-right p {
+	line-height: 1.5em;
+	font-size: 10pt;
+}
+
+/* contact */
+.contact-title {
+	text-align: left;
+	margin: 10px;
+	margin-top: 60px;
+	font-size: 20pt;
+}
+
+.contact-table {
+	text-align: left;
+	font-size: 11pt;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+.contact-table tr td:first-child {
+	background: #eeeeee;
+	text-align: center;
+	width: 250px;
+}
+
+.admin-contactDetail-table {
+	text-align: left;
+	font-size: 11pt;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.admin-contactDetail-table tr td:first-child {
+	background: #eeeeee;
+	text-align: center;
+	width: 250px;
+}
+
+input[type=text], input[type=password] {
+	text-indent: 0.6em;
+	margin-left: 20px;
+	height: 40px;
+	width: 350px;
+	background: #f4f4f4;
+	border: 1px solid #c5c5c5;
+}
+
+input[type=radio], input[type=checkbox] {
+	margin-left: 20px;
+	margin-right: 5px;
+	height: 40px;
+	margin-top: -1px;
+	vertical-align: middle;
+}
+
+textarea {
+	margin-left: 20px;
+	background: #f4f4f4;
+	text-indent: 0.6em;
+	line-height: 1.8em;
+	width: 100%;
+}
+
+.btn01 {
+	font-size: 12pt;
+	border: none;
+	color: white;
+	background: #333333;
+	height: 50px;
+	width: 160px;
+	cursor: pointer;
+	margin: 30px 0 100px 0;
+	border-radius: 1em;
+}
+
+.btn01:hover {
+	background: #408080;
+	transition: 0.2s;
+}
+
+.text-container {
+	text-align: left;
+	font-size: 11pt;
+	line-height: 2em;
+	margin-left: 460px;
+	font-family: 'Gowun Batang', serif;
+}
+
+.first-line {
+	font-size: 18pt;
+	font-weight: bold;
+	font-family: 'Gowun Batang', serif;
+}
+
+.last-line {
+	font-weight: bold;
+	font-size: 13pt;
+}
+
+.image-container {
+	text-align: center;
+	float: left;
+}
+
+.text-image-container {
+	display: inline-block;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+/* 신축 인테리어 & 리모델링 좌우배치 */
+.left-container {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 2;
+}
+
+.right-container {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: left;
+	margin-left: 200px;
+	line-height: 3em;
+}
+
+.double-container {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* 스크롤 내려도 화면에 텍스트 고정 */
+.right-text {
+	width: 100%;
+	height: 200px;
+	position: sticky;
+	top: 120px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title-eng {
+	color: gray;
+	line-height: 2em;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.photo-container span {
+	text-align: left;
+}
+
+.photo-container h3 {
+	margin-top: 50px;
+	text-align: left;
+}
+
+/* 이미지 흑백처리 */
+.partdesign-container {
+	margin-top: 55px;
+	margin-bottom: 100px;
+	background: white;
+}
+
+.img img {
+	mix-blend-mode: luminosity;
+}
+
+.img img:hover {
+	mix-blend-mode: normal;
+}
+
+.btn02 {
+	cursor: pointer;
+	width: 115px;
+	height: 115px;
+	border: none;
+	background: #515151;
+	color: white;
+	font-size: 12pt;
+}
+
+.btn02:hover {
+	background: #408080;
+	transition: 0.2s;
+}
+
+.login-table {
+	text-align: left;
+	font-size: 10pt;
+}
+
+.login-table tr td:first-child {
+	background: #eeeeee;
+	text-align: center;
+	width: 250px;
+}
+
+.login-container {
+	margin: 100px;
+	display: inline-block;
+}
+
+.userwelcome {
+	text-align: right;
+}
+
+/* 관리자 페이지 */
+.subcontent-container {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 200px;
+}
+
+.admin-contact-table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.admin-contact-table tr:first-child {
+	background: #c3c3c3;
+	height: 60px;
+}
+
+.admin-contact-table tr:not(first-child) {
+	height: 50px;
+}
+
+
+.delete_btn {
+	width: 40px;
+	height: 25px;
+	background: #f35256;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 1em;
+}
+
+.delete_btn:hover {
+	background: #d70f14;
+	transition: 0.3s;
+}
+
+.check_btn {
+	width: 40px;
+	height: 25px;
+	background: #408080;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 1em;
+}
+
+.check_btn:hover {
+	background: #2d5959;
+	transition: 0.3s;
+}
+
+.logoutbtn {
+	background: #414141;
+	color: white;
+	cursor: pointer;
+	border-radius: 1em;
+	border: none;
+	width: 70px;
+	height: 21px;
+}
+
+.logoutbtn:hover {
+	background: #408080;
+}
+
+.subnewinterior-container {
+	display: inline-block;
+}
+
+.newinteriorAdd-table {
+	width: 100%;
+}
+
+.newinteriorAdd-table tr:first-child {
+	background: #c3c3c3;
+	height: 60px;
+}
+
+.newinteriorAdd-table tr:not(first-child) {
+	height: 50px;
+}
+
+.newinteriorAdd-table td:not(first-child) {
+	width: 200px;
+}
+
+.btn_add, .btn_delete {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 80px;
+	height: 40px;
+	font-size: 12pt;
+	cursor: pointer;
+	background: #275050;
+	border: none;
+	color: white;
+	border-radius: 1em;
+}
+
+.btn_add:hover, .btn_delete:hover {
+	background: #408080;
+	transition: 0.3s;
+}
+
+.newinteriorModify-table {
+	width: 100%;
+	height: 400px;
+}
+
+.newinteriorModify-table td:first-child {
+	background: #c3c3c3;
+	width: 150px;
+}
+
+.newinteriorModify-table p {
+	text-align: left;
+	margin-left: 8px;
+}
+
+.paging {
+	margin: 40px;
+}
+
+.admin_nav input{
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	
+}
+
+
+    #about-content {
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        /* Firefox */
+        -webkit-animation: fadein 2s;
+        /* Safari and Chrome */
+        -o-animation: fadein 2s;
+        /* Opera */
+    }
+ 
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+ 
+        to {
+            opacity: 1;
+        }
+    }
+ 
+    @-moz-keyframes fadein {
+ 
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+ 
+        to {
+            opacity: 1;
+        }
+    }
+ 
+    @-webkit-keyframes fadein {
+ 
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+ 
+        to {
+            opacity: 1;
+        }
+    }
+ 
+    @-o-keyframes fadein {
+ 
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+ 
+        to {
+            opacity: 1;
+        }
+    }
+    
+
+
